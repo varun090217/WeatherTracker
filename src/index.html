@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Weather Forcaster</title>
+  </head>
+  <body
+    class="bg-gray-900 text-white flex items-center justify-center h-screen dark"
+  >
+    <!-- Search Container -->
+    <div class="text-center flex flex-col items-center space-y-6">
+      <!-- Heading -->
+      <h1 class="text-4xl font-bold text-blue-500">Check Weather Here</h1>
+
+      <!-- Input Field -->
+      <input
+        id="city-input"
+        type="text"
+        placeholder="Enter city name"
+        class="px-6 py-3 bg-gray-800 text-white rounded-full border-2 border-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 w-96 dark:bg-gray-700 dark:placeholder-gray-500 dark:border-gray-500"
+      />
+
+      <!-- Search Button -->
+      <button
+        id="get-weather-btn"
+        class="py-3 px-12 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        Search
+      </button>
+
+      <!-- Weather Information Section -->
+      <div id="weather-info" class="hidden text-center space-y-2">
+        <h2 id="city-name" class="text-2xl font-bold text-blue-400"></h2>
+        <p id="temperature" class="text-lg"></p>
+        <p id="description" class="text-sm text-gray-400"></p>
+      </div>
+
+      <!-- Error Message -->
+      <p id="error-message" class="hidden text-red-500 text-sm">
+        City not found. Please try again.
+      </p>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
