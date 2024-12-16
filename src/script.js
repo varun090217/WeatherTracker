@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(weatherData);
     const temp = (main.temp - 273.15).toFixed(2);
     cityName.textContent = name;
-    temperature.textContent = `Temperature : ${temp} °F`;
+    temperature.textContent = `Temperature : ${temp} °C`;
     description.textContent = `Description : ${weather[0].description}`;
     weatherInfo.classList.remove("hidden");
     errorMessage.classList.add("hidden");
